@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body id="wrapper">
+  
+  <header>
+    <h1 id="title" class="text-center">EDGE Survey Form </h1>
+    <p id="description" class="text-center"> Thank you for taking the time to help us improve our products</p>
+  </header>
+  
+  <main>
+    <form id="survey-form">
+      <div class="form-group">
+      <label id="name-label" for="name"> Name </label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+   </div>
+       
+      <div class="form-group">
+         <label id="email-label" for="email"> Email </label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+    
+      <div class="form-group">
+        <label id="number-label" for="number">Age <span class="optional">(optional)</span> </label>
+        <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+      </div>
+      
+        <div class="form-group">
+          <label id="product-label" for="product">Which is your favorite EDGE product? </label>
+          <select id="dropdown" name="product" class="form-control2" required>
+            <option disabled selected value> Select favorite product </option>
+            <option value="TV"> TV </option>
+            <option value="Laptop"> Laptop </option>
+            <option value="Monitor"> Monitor </option>
+            <option value="Headphones"> Headphones </option>
+            <option value="Other"> Other </option>
+          </select>
+            </div>
+      
+      <div class="form-group">
+        <label id="recommend" for="products"> Would you recommend EDGE products to a friend? </label>
+       <label>
+        <input name="user-recommend" value="Yes" type="radio" class="input-radio" id="radiotext" checked> Yes </input>
+        </label>
+      <label>
+      <input name="user-recommend" value="No" type="radio" class="input-radio" id="radiotext"> No </input>   
+      </label>
+     <label>
+       <input name="user-recommend" value="Not Sure" type="radio" class="input-radio" id="radiotext"> Not Sure </input>
+    </label>
+    </div>
+    
+    <div class="form-group">
+      <label>
+        What would you like to see improved? <span class="optional"> (Check all that apply) </span>
+      </label>
+      <label>
+        <input name="improved" value="customer-service" type="checkbox" class="input-checkbox"> Customer Service
+      </label>
+      <label>
+        <input name="improved" value="product-design" type="checkbox" class="input-checkbox"> Product Design
+      </label>
+      <label>
+        <input name="improved" value="production-time" type="checkbox" class="input-checkbox"> Production Time
+      </div>
+     
+      <div class="form-group">
+       <label>
+      Any comments and additional suggestions below
+       </label>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."> </textarea>
+      </div>
+      
+       <div class="form-group">
+         <button type="submit" id="submit" class="submit-button"> submit </button>
+            </div>
+      
+    </form>
+        </main>
+            </body>
+                
+<style>
+body {
+  background-image: url("https://wallpaperaccess.com/full/1385491.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: grey;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+
+}
+.text-center {
+  text-align: center;
+  
+}
+#title {
+  display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+ font-weight:  ;
+  color:white;
+  }
+
+p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  
+}
+#description {
+  font-style: italic;
+  color: white;
+  font-size: 15px;
+
+}
+#survey-form {
+  width: 750px;
+ height: 1250px;
+ margin: auto;
+ position: relative;
+  background: rgb(0,0,0,0.5); /* 0.5 is opacity that way only the background color is transparent, not the whole form */
+  border-radius: 0.25rem;
+  }
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+  box-sizing: border-box;
+  color: white;
+}
+.form-control {
+    display: block;
+    width: 550px;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    
+}
+.form-control2 {
+    display: block;
+    width: 575px;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    
+}
+.form-group {
+    margin: 0rem auto 01.25rem auto;
+  padding: 0.75rem 5rem ;
+  color:white;
+  
+}
+
+#name-label {
+}
+#email-label{
+}
+#number-label {
+  }
+#prodcut-label {
+  
+}
+#wrapper {
+  margin-left:auto;
+    margin-right:auto;
+    width:960px;
+}
+
+.optional {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #e4e4e4;
+}
+
+.input-radio, .input-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+    margin: 2;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit ;
+  box-sizing: border-box;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 550px;
+    padding: 0.625rem;
+    resize: vertical;
+}
+
+.submit-button {
+    display: block;
+    width: 575px;
+    padding: 0.75rem;
+    background: rgba(188,158,96,255);
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+  font-size: 18px;
+}
+
+</style>
+</html>
